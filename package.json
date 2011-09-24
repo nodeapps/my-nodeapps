@@ -1,0 +1,12 @@
+{
+  "name": "hubsite",
+  "scripts": {
+    "start": "server.js"
+  },
+  "dependencies": {
+    "base64": "2.0.x",
+    "request": "2.1.x",
+    "ejs": "0.4.x",
+    "node-static": "0.5.x"
+  }
+}
