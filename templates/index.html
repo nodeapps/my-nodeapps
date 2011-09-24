@@ -1,0 +1,30 @@
+<!html>
+<html>
+  <head>
+    <title>Yes, it's a hubsite.</title>
+    <link rel="stylesheet" href="bootstrap.css">
+  </head>
+  <body>
+    <div class="">
+        
+    </div>
+    <div class="container">
+      <div class="content">
+        <div class="page-header">
+          <h1>Joshua Holbrook's Nodejitsu Apps:</h1>
+        </div>
+        <div class="row">
+          <div class="span8">
+            <% apps.forEach(function(app) { %>
+              <h1>
+                <a href="http://<%= app.subdomain %>.nodejitsu.com">
+                  <%= app.name %> <small><%= app.subdomain %>.nodejitsu.com</small>
+                </a>
+              </h1>
+            <% }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
