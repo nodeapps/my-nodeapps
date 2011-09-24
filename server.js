@@ -47,6 +47,9 @@ var routes = {
         });
     },
     "/error.html": function(err, cb) {
+        if (!err) {
+            err = { stack: "NO ERROR LOL" };
+        }
         cb(null, templates["/error.html"](err));
     }
 };
@@ -67,7 +70,7 @@ http.createServer(function (req, res) {
             routes[req.url](null, function serve (err, rendered) {
                 if (err) {
                     console.log(err.stack);
-                    res.writeHead(500, {'Content-Type': 'text/html'});
+                    res.writeHead(200, {'Content-Type': 'text/html'});
                     routes["/error.html"](err, serve);
                 } else {
                     res.writeHead(200, {'Content-Type': 'text/html'});
