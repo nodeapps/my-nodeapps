@@ -40,7 +40,9 @@ var routes = {
                     "apps": JSON.parse(body)
                         .apps
                         .filter( function (app) {
-                            return app.name !== "hubsite" && app.state === "started";
+                            return app.name !== "hubsite"
+                                && app.state === "started"
+                                && !app.env.PRIVATE;
                         })
                 }));
             }
@@ -62,10 +64,8 @@ var server = new static.Server(__dirname+'/static/');
 //Server
 http.createServer(function (req, res) {
 
-
-
     req.on("end", function() {
-        //todo: use actual router
+        //Uses templates if any of them match
         if ( routes.hasOwnProperty(req.url) ) {
             routes[req.url](null, function serve (err, rendered) {
                 if (err) {

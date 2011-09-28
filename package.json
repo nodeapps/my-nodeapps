@@ -1,8 +1,11 @@
 {
   "name": "hubsite",
+  "subdomain": "hubsite",
+  "domains": "jesusabdullah.net",
   "scripts": {
     "start": "server.js"
   },
+  "version": "0.0.0-7",
   "dependencies": {
     "base64": "2.0.x",
     "request": "2.1.x",
