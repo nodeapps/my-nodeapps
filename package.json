@@ -1,8 +1,8 @@
 {
-  "name": "hubsite",
-  "subdomain": "hubsite",
+  "name": "showcase",
+  "subdomain": "showcase",
   "scripts": {
-    "start": "server.js"
+    "start": "bin/showcase"
   },
   "version": "0.0.0",
   "dependencies": {
