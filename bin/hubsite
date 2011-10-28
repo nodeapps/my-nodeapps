@@ -7,7 +7,7 @@ var http = require('http'),
     fs = require('fs'),
     ejs = require('ejs'),
     static = require('node-static'),
-    config = JSON.parse(fs.readFileSync(__dirname+"/config.json").toString());
+    config = require("nconf").loadFilesSync([__dirname+"/../config.json"]);
 
 // Templates.
 var templates = {};
@@ -16,7 +16,7 @@ var templates = {};
     "/index.html",
     "/error.html"
 ].forEach(function(path) {
-    templates[path] = ejs.compile(fs.readFileSync(__dirname+"/templates"+path)
+    templates[path] = ejs.compile(fs.readFileSync(__dirname+"/../templates"+path)
                                       .toString());  
 });
 
@@ -59,7 +59,7 @@ var routes = {
 routes["/"] = routes["/index.html"];
 
 //Static fileserver
-var server = new static.Server(__dirname+'/static/');
+var server = new static.Server(__dirname+"/../static/");
 
 //Server
 http.createServer(function (req, res) {
