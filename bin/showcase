@@ -1,19 +1,12 @@
-// Showcase server
+// showcase server
 
 var http = require('http'),
-    util = require('util'),
-    request = require('request'),
-    base64 = require('base64'),
-    fs = require('fs'),
-    ejs = require('ejs'),
     static = require('node-static'),
-    showcase = require('../lib/showcase');
-    config = require("nconf").loadFilesSync([__dirname+"/../config.json"]);
+    server = new static.Server(__dirname+"/../static"),
+    config = require("nconf").loadFilesSync([__dirname+"/../config.json"]),
+    showcase = require('../lib/showcase')(config);
 
-//Static fileserver
-var server = new static.Server(__dirname+"/../static");
-
-//Server
+// server
 http.createServer(function (req, res) {
 
   showcase(req, res, function (req, res) {
