@@ -85,4 +85,4 @@ http.createServer(function (req, res) {
 
 }).listen(8080);
 
-console.log('http server running on port 8080');
+console.log('showcase running on port 8080');

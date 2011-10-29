@@ -1,7 +1,7 @@
 <!html>
 <html>
   <head>
-    <title>Yes, it's a hubsite.</title>
+    <title><%= apps[0].user %>'s Nodejitsu Apps</title>
     <link rel="stylesheet" href="bootstrap.css">
   </head>
   <body style="padding-top: 20px;">
@@ -19,6 +19,15 @@
             </h1>
           <% }) %>
         </div>
+        <footer class="span12">
+          <div class="row">
+          <div style="text-align: left" class="span6">
+            <strong>A <a href="http://github.com/nodeapps">Node Apps</a> Application</strong>
+          </div>
+          <div style="text-align: right;" class="span6">
+            <strong>Powered by <a href="http://nodejitsu.com">Nodejitsu</a></strong>
+          </div> 
+        </footer>
       </div>
     </div>
   </body>
