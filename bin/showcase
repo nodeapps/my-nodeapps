@@ -1,4 +1,4 @@
-//Server for the hubsite.
+// Showcase server
 
 var http = require('http'),
     util = require('util'),
@@ -40,7 +40,7 @@ var routes = {
                     "apps": JSON.parse(body)
                         .apps
                         .filter( function (app) {
-                            return app.name !== "hubsite"
+                            return app.name !== "showcase"
                                 && app.state === "started"
                                 && !app.env.PRIVATE;
                         })
