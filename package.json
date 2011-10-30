@@ -1,10 +1,10 @@
 {
   "name": "my-nodeapps",
-  "subdomain": "myapps",
+  "author": "Nodejitsu Inc. <support@nodejitsu.com>",
+  "version": "0.1.0",
   "scripts": {
     "start": "./bin/server"
   },
-  "version": "0.0.0",
   "dependencies": {
     "request": "2.1.x",
     "ejs": "0.4.x",
