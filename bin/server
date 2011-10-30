@@ -1,18 +1,15 @@
-// showcase server
+#!/usr/bin/env node
 
 var http = require('http'),
     static = require('node-static'),
     server = new static.Server(__dirname+"/../static"),
     config = require("nconf").loadFilesSync([__dirname+"/../config.json"]),
-    showcase = require('../lib/showcase')(config);
+    myapps = require('../lib/myapps')(config);
 
-// server
 http.createServer(function (req, res) {
-
-  showcase(req, res, function (req, res) {
+  myapps(req, res, function (req, res) {
     server.serve(req, res);
   });
-
 }).listen(8080);
 
-console.log('showcase running on port 8080');
+console.log('myapps running on port 8080');
