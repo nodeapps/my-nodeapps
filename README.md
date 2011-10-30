@@ -15,6 +15,8 @@
 # Configuration
 
 In order to run the `my-nodeapps` application, you will need to modify the `config.json` with your nodejitsu credentials.
+
+
 ```js
 {
   "username": "marak",
