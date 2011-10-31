@@ -3,7 +3,7 @@
 
 ## ONLINE DEMO
 
-  <http://mynodeapps.nodejitsu.com/>
+  <http://myapps.nodejitsu.com/>
 
 ![](https://github.com/nodeapps/my-nodeapps/raw/master/screenshots/my-nodeapps.png)
 
