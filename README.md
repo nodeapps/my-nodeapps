@@ -1,6 +1,7 @@
 # Node Apps
 ## my-nodeapps
 
+![](https://github.com/nodeapps/my-nodeapps/raw/master/screenshots/my-nodeapps.png)
 
 # Requirements
 
