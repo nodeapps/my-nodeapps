@@ -13,9 +13,12 @@
 
 # Installation
 
+    mkdir myapp
+    cd myapp/
     jitsu install my-nodeapps
 
 *If you do not have `jitsu` installed you can install it via `npm install jitsu -g`*
+
 
 # Configuration
 
@@ -33,14 +36,12 @@ In order to run the `my-nodeapps` application, you will need to modify the `conf
 
 ### Starting locally
 
-    cd my-nodeapps/
     node bin/server
 
 *Now you can visit http://localhost:8080 to view your node apps*
 
 ### Deploy to nodejitsu
 
-    cd my-nodeapps/
     jitsu deploy
 
 *You will now be prompted for a `subdomain` to deploy your application on*
