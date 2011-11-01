@@ -11,5 +11,6 @@
     "node-static": "0.5.x",
     "nodejitsu-api": "0.1.x",
     "nconf": "0.4.x"
-  }
+  },
+  "analyze": false
 }
