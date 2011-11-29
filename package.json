@@ -2,7 +2,7 @@
   "subdomain": "myapps",
   "name": "nodeapps-my-nodeapps",
   "author": "Nodejitsu Inc. <support@nodejitsu.com>",
-  "version": "0.1.0-2",
+  "version": "0.1.1",
   "scripts": {
     "start": "./bin/server"
   },
