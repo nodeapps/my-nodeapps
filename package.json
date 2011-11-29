@@ -1,7 +1,8 @@
 {
+  "subdomain": "myapps",
   "name": "nodeapps-my-nodeapps",
   "author": "Nodejitsu Inc. <support@nodejitsu.com>",
-  "version": "0.1.0",
+  "version": "0.1.0-2",
   "scripts": {
     "start": "./bin/server"
   },
@@ -10,6 +11,7 @@
     "ejs": "0.4.x",
     "node-static": "0.5.x",
     "nodejitsu-api": "0.1.x",
+    "pkginfo": "0.2.x",
     "nconf": "0.4.x"
   },
   "analyze": false
